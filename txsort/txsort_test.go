@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil/txsort"
+	"github.com/sparkspay/gosparks/wire"
+	"github.com/sparkspay/gosparksutil/txsort"
 )
 
 // TestSort ensures the transaction sorting works according to the BIP.

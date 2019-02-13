@@ -7,8 +7,8 @@ package hdkeychain_test
 import (
 	"fmt"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcutil/hdkeychain"
+	"github.com/sparkspay/gosparks/chaincfg"
+	"github.com/sparkspay/gosparksutil/hdkeychain"
 )
 
 // This example demonstrates how to generate a cryptographically random seed

@@ -9,13 +9,13 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/txscript"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
-	"github.com/btcsuite/btcutil/gcs"
-	"github.com/btcsuite/btcutil/gcs/builder"
+	"github.com/sparkspay/gosparks/chaincfg"
+	"github.com/sparkspay/gosparks/chaincfg/chainhash"
+	"github.com/sparkspay/gosparks/txscript"
+	"github.com/sparkspay/gosparks/wire"
+	"github.com/sparkspay/gosparksutil"
+	"github.com/sparkspay/gosparksutil/gcs"
+	"github.com/sparkspay/gosparksutil/gcs/builder"
 )
 
 var (
@@ -79,8 +79,8 @@ func TestUseBlockHash(t *testing.T) {
 		Index: 4321,
 	}
 
-	// btcutil.Address
-	addr, err := btcutil.DecodeAddress(testAddr, &chaincfg.MainNetParams)
+	// gosparksutil.Address
+	addr, err := gosparksutil.DecodeAddress(testAddr, &chaincfg.MainNetParams)
 	if err != nil {
 		t.Fatalf("Address decode failed: %s", err.Error())
 	}
